@@ -1,3 +1,19 @@
 .header {
-    background-color: red;
+    background-color: #fff;
+    padding: 1.6rem 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__right {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 1.6rem;
 }
