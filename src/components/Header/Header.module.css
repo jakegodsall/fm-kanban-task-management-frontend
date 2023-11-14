@@ -12,6 +12,8 @@
 
 .header__right {
     display: flex;
+    align-items: center;
+    gap: 1.6rem;
 }
 
 .header__logo {

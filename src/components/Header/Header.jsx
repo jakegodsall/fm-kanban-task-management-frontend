@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Header.module.css";
 
 import Logo from "../../assets/logo-mobile.svg";
+import VerticalEllipsis from "../../assets/icon-vertical-ellipsis.svg";
 
 import HeaderSelector from "./HeaderSelector";
 import AddTaskButton from "./AddTaskButton";
@@ -16,6 +17,7 @@ const Header = () => {
             </div>
             <div className={styles.header__right}>
                 <AddTaskButton />
+                <img src={VerticalEllipsis} alt="ellipsis" />
             </div>
         </header>
     );

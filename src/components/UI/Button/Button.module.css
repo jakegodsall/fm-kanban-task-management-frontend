@@ -1,0 +1,7 @@
+.button {
+    padding: 1.8rem 1.5rem;
+    border-radius: 2.4rem;
+    border: none;
+    background-color: var(--main-purple);
+    color: #fff;
+}
