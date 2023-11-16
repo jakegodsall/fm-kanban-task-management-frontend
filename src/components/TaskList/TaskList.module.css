@@ -1,0 +1,9 @@
+.taskList {
+}
+
+.taskList__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 1.6rem;
+}
