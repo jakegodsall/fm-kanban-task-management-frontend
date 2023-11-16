@@ -1,0 +1,39 @@
+.darkModeToggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    background-color: hsla(242, 48%, 58%, 0.1);
+}
+
+.darkModeToggle__checkbox {
+    display: none;
+}
+
+.darkModeToggle__toggle {
+    display: inline-block;
+    position: relative;
+    width: 5rem;
+    height: 2.4rem;
+    background-color: var(--main-purple);
+    border-radius: 1.5rem;
+}
+
+.darkModeToggle__toggle::after {
+    content: "";
+    position: absolute;
+    top: 0.4rem;
+    left: 0.6rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 5rem;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+.darkModeToggle__toggle_dark::after {
+    transform: translateX(2.3rem);
+}

@@ -30,6 +30,15 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
 img,
 picture,
 video,
