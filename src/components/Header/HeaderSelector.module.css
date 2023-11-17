@@ -3,3 +3,11 @@
     align-items: center;
     gap: 0.9rem;
 }
+
+.headerSelector__chevron {
+    transition: all 0.3s ease-in-out;
+}
+
+.headerSelector__chevron_open {
+    transform: rotate(-180deg);
+}
