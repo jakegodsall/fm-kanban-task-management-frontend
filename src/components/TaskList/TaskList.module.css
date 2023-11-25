@@ -1,9 +1,19 @@
 .taskList {
+    margin-left: 1.6rem;
+}
+
+.taskList__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.24rem;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    padding: 2.4rem 0;
 }
 
 .taskList__list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-left: 1.6rem;
+    width: 28rem;
 }

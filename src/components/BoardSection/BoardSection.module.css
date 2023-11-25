@@ -1,0 +1,10 @@
+.boardSection {
+}
+
+.boardSection__list {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.boardSection__listItem {
+}
