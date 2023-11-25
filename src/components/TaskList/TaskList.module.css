@@ -1,6 +1,10 @@
 .taskList {
 }
 
+.taskList:last-child {
+    margin-right: 1.6rem;
+}
+
 .taskList__title {
     font-size: 1.2rem;
     font-weight: 600;
