@@ -7,7 +7,7 @@
     --very-dark-grey: #20212c;
     --red: #ea5555;
     --red-hover: #ff9898;
-    --medium-grey: #828FA3;
+    --medium-grey: #828fa3;
 }
 
 *,
@@ -25,13 +25,16 @@ html {
 }
 
 body {
+    width: 100%;
+    overflow-x: scroll;
     font-size: 1.6rem;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
 }

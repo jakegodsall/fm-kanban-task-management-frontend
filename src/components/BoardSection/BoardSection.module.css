@@ -1,4 +1,8 @@
 .boardSection {
+    margin: 6.4rem 0 4rem;
+    padding-inline: 1.6rem;
+    width: inherit;
+    overflow-x: auto;
 }
 
 .boardSection__list {

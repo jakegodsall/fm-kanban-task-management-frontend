@@ -1,4 +1,10 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow-x: auto;
+    white-space: nowrap;
     background-color: #fff;
     padding: 1.6rem 1.8rem;
     display: flex;
