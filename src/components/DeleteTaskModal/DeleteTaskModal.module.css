@@ -1,0 +1,30 @@
+.deleteTaskBox {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.deleteTaskBox__title {
+    color: var(--red);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.deleteTaskBox__textContent {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+    color: var(--medium-grey);
+}
+
+.deleteTaskBox__buttonSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.deleteTaskBox__deleteButton {
+}
+
+.deleteTaskBox__cancelButton {
+}
