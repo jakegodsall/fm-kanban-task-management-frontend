@@ -2,6 +2,7 @@ import React from "react";
 import TaskList from "../TaskList/TaskList";
 
 import styles from "./BoardSection.module.css";
+import TaskItemModal from "../TaskItemModal/TaskItemModal";
 
 const DUMMYTASKS = [
     {
@@ -277,20 +278,26 @@ const DUMMYTASKS = [
 
 const BoardPage = () => {
     return (
-        <div className={styles.boardSection}>
-            <ul className={styles.boardSection__list}>
-                {DUMMYTASKS.map((section, idx) => {
-                    return (
-                        <li key={idx} className={styles.boardSection__listItem}>
-                            <TaskList
-                                section={section.section}
-                                tasks={section.tasks}
-                            />
-                        </li>
-                    );
-                })}
-            </ul>
-        </div>
+        <>
+            <div className={styles.boardSection}>
+                <ul className={styles.boardSection__list}>
+                    {DUMMYTASKS.map((section, idx) => {
+                        return (
+                            <li
+                                key={idx}
+                                className={styles.boardSection__listItem}
+                            >
+                                <TaskList
+                                    section={section.section}
+                                    tasks={section.tasks}
+                                />
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
+            <TaskItemModal task={DUMMYTASKS[0].tasks[0]} />
+        </>
     );
 };
 

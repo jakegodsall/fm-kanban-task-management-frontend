@@ -4,7 +4,6 @@ import styles from "./App.module.css";
 
 import Header from "./components/Header/Header";
 import BoardSection from "./components/BoardSection/BoardSection";
-import DeleteObjectModal from "./components/DeleteObjectModal/DeleteObjectModal";
 
 const deleteTask = {
     title: "Delete this task?",
