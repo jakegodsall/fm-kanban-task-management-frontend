@@ -23,8 +23,35 @@
     gap: 1.6rem;
 }
 
+.deleteTaskBox__deleteButton,
+.deleteTaskBox__cancelButton {
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.8rem 0;
+    border: none;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
 .deleteTaskBox__deleteButton {
+    background-color: var(--red);
+    color: #fff;
 }
 
 .deleteTaskBox__cancelButton {
+    color: var(--main-purple);
+    background-color: #635fc71a;
+}
+
+.deleteTaskBox__deleteButton:active,
+.deleteTaskBox__cancelButton:active {
+    transform: translateY(0.2rem);
+}
+
+.deleteTaskBox__deleteButton:hover {
+    filter: brightness(1.2);
+}
+
+.deleteTaskBox__cancelButton:hover {
 }
