@@ -24,7 +24,6 @@
 .modal__contentBox {
     background-color: #fff;
     border-radius: 1rem;
-    padding: 1.6rem 2.4rem;
     z-index: 10;
     opacity: 1;
     margin-inline: 1.6rem;

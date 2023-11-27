@@ -1,16 +1,15 @@
 import React from "react";
 
-import styles from "./DeleteTaskModal.module.css";
+import styles from "./DeleteObjectModal.module.css";
 import Modal from "../UI/Modal/Modal";
 
-const DeleteTaskModal = () => {
+const DeleteObjectModal = ({ title, textContent }) => {
     return (
         <Modal>
             <div className={styles.deleteTaskBox}>
-                <p className={styles.deleteTaskBox__title}>Delete this task?</p>
+                <p className={styles.deleteTaskBox__title}>{title}</p>
                 <p className={styles.deleteTaskBox__textContent}>
-                    Are you sure you want to delete the 'Build settings UI' task
-                    and its subtasks? This action cannot be reversed.
+                    {textContent}
                 </p>
                 <div className={styles.deleteTaskBox__buttonSection}>
                     <button className={styles.deleteTaskBox__deleteButton}>
@@ -25,4 +24,4 @@ const DeleteTaskModal = () => {
     );
 };
 
-export default DeleteTaskModal;
+export default DeleteObjectModal;
