@@ -1,0 +1,27 @@
+.taskItemModal {
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.taskItemModal__titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    cursor: pointer;
+}
+
+.taskItemModal__title {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.taskItemModal__description {
+    color: var(--medium-grey);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+}

@@ -2,10 +2,11 @@ import React from "react";
 
 import styles from "./TaskItemModal.module.css";
 import Modal from "../UI/Modal/Modal";
-import SubTaskItem from "./SubTaskItem/SubTaskItem";
+
+import Ellipsis from "../../assets/icon-vertical-ellipsis.svg";
+import SubTaskList from "./SubTaskList/SubTaskList";
 
 const TaskItemModal = ({ task }) => {
-    console.log(task.subtasks);
     task.subtasks[0].isCompleted = true;
 
     let trueCount = 0;
@@ -21,23 +22,19 @@ const TaskItemModal = ({ task }) => {
 
     return (
         <Modal>
-            <div>
-                <p>{task.title}</p>
-                <p>{task.description}</p>
-                <div>
-                    <p>
-                        Subtasks ({trueCount} of {falseCount})
-                    </p>
-                    <ul>
-                        {task.subtasks.map((subtask, idx) => {
-                            return (
-                                <li key={idx}>
-                                    <SubTaskItem subtask={subtask} />
-                                </li>
-                            );
-                        })}
-                    </ul>
+            <div className={styles.taskItemModal}>
+                <div className={styles.taskItemModal__titleContainer}>
+                    <p className={styles.taskItemModal__title}>{task.title}</p>
+                    <img src={Ellipsis} alt="ellipsis button" />
                 </div>
+                <p className={styles.taskItemModal__description}>
+                    {task.description}
+                </p>
+                <SubTaskList
+                    subtaskList={task.subtasks}
+                    trueCount={trueCount}
+                    falseCount={falseCount}
+                />
             </div>
         </Modal>
     );

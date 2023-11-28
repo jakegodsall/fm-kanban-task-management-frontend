@@ -1,0 +1,15 @@
+.subtaskList {
+}
+
+.subtaskList__title {
+    color: var(--medium-grey);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.subtaskList__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}

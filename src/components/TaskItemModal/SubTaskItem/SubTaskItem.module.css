@@ -1,0 +1,38 @@
+.subtask {
+    padding: 1.6rem 1.2rem;
+    background-color: var(--light-grey-light-bg);
+    border-radius: 0.4rem;
+    display: flex;
+    gap: 1.6rem;
+}
+
+.subtask__checkbox {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #fff;
+    border: 1px solid rgba(130, 143, 163, 0.25);
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtask__checkbox_completed {
+    background-color: var(--main-purple);
+}
+
+.subtask__checkIcon {
+    width: 1rem;
+}
+
+.subtask__title {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.subtask__title_selected {
+    opacity: 0.5;
+    text-decoration-line: line-through;
+}
