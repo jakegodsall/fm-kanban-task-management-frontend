@@ -5,6 +5,7 @@ import Modal from "../UI/Modal/Modal";
 
 import Ellipsis from "../../assets/icon-vertical-ellipsis.svg";
 import SubTaskList from "./SubTaskList/SubTaskList";
+import StatusSwitcher from "./StatusSwitcher/StatusSwitcher";
 
 const TaskItemModal = ({ task }) => {
     task.subtasks[0].isCompleted = true;
@@ -35,6 +36,7 @@ const TaskItemModal = ({ task }) => {
                     trueCount={trueCount}
                     falseCount={falseCount}
                 />
+                <StatusSwitcher />
             </div>
         </Modal>
     );
