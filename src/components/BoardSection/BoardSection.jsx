@@ -2,7 +2,6 @@ import React from "react";
 import TaskList from "../TaskList/TaskList";
 
 import styles from "./BoardSection.module.css";
-import TaskItemModal from "../TaskItemModal/TaskItemModal";
 
 const DUMMYTASKS = [
     {
@@ -296,7 +295,7 @@ const BoardPage = () => {
                     })}
                 </ul>
             </div>
-            <TaskItemModal task={DUMMYTASKS[0].tasks[0]} />
+            {/* <TaskItemModal task={DUMMYTASKS[0].tasks[0]} /> */}
         </>
     );
 };

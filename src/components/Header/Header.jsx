@@ -7,7 +7,7 @@ import VerticalEllipsis from "../../assets/icon-vertical-ellipsis.svg";
 
 import HeaderSelector from "./HeaderSelector";
 import AddTaskButton from "./AddTaskButton";
-import BoardSelectDropdrown from "../BoardSelectDropdown/BoardSelectDropdown";
+import BoardSelectDropdrown from "../Modals/BoardSelectModal/BoardSelectModal";
 
 const Header = () => {
     const [boardSelectActive, setBoardSelectActive] = useState(false);

@@ -24,14 +24,6 @@ function App() {
         <div className={styles.mainContainer}>
             <Header />
             <BoardSection />
-            {/* <DeleteObjectModal
-                title={deleteTask.title}
-                textContent={deleteTask.textContent}
-            /> */}
-            {/* <DeleteObjectModal
-                title={deleteBoard.title}
-                textContent={deleteBoard.textContent}
-            /> */}
         </div>
     );
 }

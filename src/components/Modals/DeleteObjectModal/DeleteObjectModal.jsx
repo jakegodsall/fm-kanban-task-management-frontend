@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./DeleteObjectModal.module.css";
-import Modal from "../UI/Modal/Modal";
+import Modal from "../../UI/Modal/Modal";
 
 const DeleteObjectModal = ({ title, textContent }) => {
     return (

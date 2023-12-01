@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import BoardItem from "./BoardItem";
-import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
-import styles from "./BoardSelectDropdown.module.css";
-import Modal from "../UI/Modal/Modal";
+import styles from "./BoardSelectModal.module.css";
+import Modal from "../../UI/Modal/Modal";
 
 const BOARDS = [
     { id: 1, name: "Platform Launch" },
