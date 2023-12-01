@@ -1,10 +1,15 @@
 import React from "react";
 
-import Chevron from "../../../assets/icon-chevron-up.svg";
+import Chevron from "../../../assets/icon-chevron-down.svg";
 
 import styles from "./Dropdown.module.css";
+import DropdownItem from "./DropdownItem/DropdownItem";
 
-const Dropdown = ({ isOpen, setIsOpen }) => {
+const Dropdown = ({ isOpen, setIsOpen, options }) => {
+    const handleCurrentValueClick = () => {
+        setIsOpen((prevState) => !prevState);
+    };
+
     return (
         <div
             className={
@@ -13,7 +18,10 @@ const Dropdown = ({ isOpen, setIsOpen }) => {
                     : styles.dropdown
             }
         >
-            <div className={styles.dropdown__currentValue}>
+            <div
+                className={styles.dropdown__currentValue}
+                onClick={handleCurrentValueClick}
+            >
                 <p className={styles.dropdown__currentValueTitle}>Doing</p>
                 <img
                     className={styles.dropdown__currentValueIcon}
@@ -22,18 +30,18 @@ const Dropdown = ({ isOpen, setIsOpen }) => {
                 />
             </div>
             <ul className={styles.dropdown__list}>
-                <li>
-                    <input type="checkbox" value="doing" />
-                    Doing
-                </li>
-                <li>
-                    <input type="checkbox" value="todo" />
-                    Todo
-                </li>
-                <li>
-                    <input type="checkbox" value="done" />
-                    Done
-                </li>
+                {options.map((option) => {
+                    return (
+                        <li className={styles.dropdown__item}>
+                            <DropdownItem
+                                name={option.name}
+                                value={option.value}
+                            >
+                                {option.textContent}
+                            </DropdownItem>
+                        </li>
+                    );
+                })}
             </ul>
         </div>
     );
